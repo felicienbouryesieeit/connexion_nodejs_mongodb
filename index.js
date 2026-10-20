@@ -13,11 +13,12 @@ app.use(express.urlencoded({extended: false}));
 app.use("/api/products",productRoute);
 app.use("/api/users",userRoute);
 
-
+/*
 app.listen(3000, () => {
       console.log("Server is running on port 3000");
       console.log("http://localhost:3000/");
     });
+    */
 
 app.get("/", (req, res) => {
   res.send("Hello from Node API Server Updated non connexion");
